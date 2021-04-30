@@ -2,13 +2,48 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <title> JS Quiz Board</title>
   </head>
+  <body>
+      <div class="container">
+          <div class ="heading">
+              <h1>QUIZ BOARD</h1>
+              <div id="answers">
+                  <form id="add">
+                    p><b>1. Which of the following is correct about features of JavaScript?</b></p>
+                    <input type="radio" name="question1" value="wrong" /> JavaScript is a lightweight, interpreted programming language.<br />
+                    <input type="radio" name="question1" value="wrong" /> JavaScript is designed for creating network-centric applications.<br />
+                    <input type="radio" name="question1" value="wrong" /> JavaScript is complementary to and integrated with Java.<br />
+                    <input type="radio" name="question1" value="right" /> All of the above.<br />
+                  <p><b>2. Which built-in method returns the calling string value converted to lower case?</b></p>
+                    <input type="radio" name="question2" value="right" /> toLowerCase()<br />
+                    <input type="radio" name="question2" value="wrong" /> toLower()<br />
+                    <input type="radio" name="question2" value="wrong" /> changeCase(case)<br />
+                    <input type="radio" name="question2" value="wrong" /> None of the above.<br />
+                  <p><b>3.  Which built-in method removes the last element from an array and returns that element?</b></p>
+                    <input type="radio" name="question3" value="wrong" /> last()<br />
+                    <input type="radio" name="question3" value="wrong" /> get()<br />
+                    <input type="radio" name="question3" value="right" /> pop()<br />
+                    <input type="radio" name="question3" value="wrong" /> None of the above.<br />
+                  <p><b>4. Which of the following function of String object creates a string to be displayed as bold as if it were in a <b> tag?</b></p>
+                    <input type="radio" name="question4" value="wrong" /> anchor()<br />
+                    <input type="radio" name="question4" value="wrong" /> big()<br />
+                    <input type="radio" name="question4" value="wrong" /> blink()<br />
+                    <input type="radio" name="question4" value="right" /> bold()<br />
+                  <p><b>5. Which of the following function of Array object returns a string representing the array and its elements? <b> tag?</b></p>
+                    <input type="radio" name="question5" value="wrong" /> toSource()<br />
+                    <input type="radio" name="question5" value="wrong" /> sort()<br />
+                    <input type="radio" name="question5" value="wrong" /> splice()<br />
+                    <input type="radio" name="question5" value="right" /> toString()<br />
+                  <button type="button" id="button2">Submit!</button>
+                  <input type="reset" id="button3">
+                </form>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </body>
