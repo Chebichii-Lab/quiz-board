@@ -8,7 +8,7 @@ function score () {
   return "you have scored" + total;
 }
 $(document).ready(function() {
-  $("#button2").click(function() {
+  $("#button1").click(function() {
     var question1 = $("input[name='question1']:checked").val();
     var question2 = $("input[name='question2']:checked").val();
     var question3 = $("input[name='question3']:checked").val();
