@@ -28,3 +28,9 @@ h1{
     font-size: 0.5cm;
     margin-left: 20px;
   }
+  .footer{
+      margin-left: 350px;
+      margin-top: 50px;
+      font-style: oblique;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
