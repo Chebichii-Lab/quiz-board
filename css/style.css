@@ -11,3 +11,20 @@ h1{
     height: 200px;
     font-size: 0.5cm
   }
+  #button1 {
+    border-radius: 12px;
+    margin-top: 30px;
+    width: 150px;
+    background-color: rgba(166, 154, 212, 0.979);
+    color: white;
+    font-size: 0.5cm;
+  }
+  #button2 {
+    border-radius: 12px;
+    margin-top: 30px;
+    width: 150px;
+    background-color: rgba(166, 154, 212, 0.979);
+    color: white;
+    font-size: 0.5cm;
+    margin-left: 20px;
+  }
