@@ -29,6 +29,11 @@ $(document).ready(function() {
     console.log(question3);
     console.log(question4);
     console.log(question5);
+    console.log(question6);
+    console.log(question7);
+    console.log(question8);
+    console.log(question9);
+    console.log(question10);
 
     if (question1 === "right") {
         result1 = 20;
