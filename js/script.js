@@ -85,7 +85,7 @@ $(document).ready(function() {
       }else {
           result10= 0;
       }
-      var score = (result1 + result2 + result3 + result4 + result5);
+      var score = (result1 + result2 + result3 + result4 + result5 + result6 + result7 + result8 + result9 + result10);
       console.log(score);
   
       $("#result").text("You have gotten " + score + " points.");
