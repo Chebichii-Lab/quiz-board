@@ -60,6 +60,31 @@ $(document).ready(function() {
       }else {
         result5= 0;
       }
+      if (question6 === "right") {
+          result6 = 20;
+      }else {
+          result6= 0;
+      }
+      if (question7 === "right") {
+          result7 = 20;
+      }else {
+          result6= 0;
+      }
+      if (question8 === "right") {
+          result8 = 20;
+      }else {
+          result8= 0;
+      }
+      if (question9 === "right") {
+          result9 = 20;
+      }else {
+          result9= 0;
+      }
+      if (question10 === "right") {
+          result10 = 20;
+      }else {
+          result10= 0;
+      }
       var score = (result1 + result2 + result3 + result4 + result5);
       console.log(score);
   
