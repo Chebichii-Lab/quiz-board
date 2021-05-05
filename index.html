@@ -7,78 +7,222 @@
   <title>Quiz Board</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
-    <title> JS Quiz Board</title>
-    <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/script.js"></script>
 </head>
   <body>
       <div class="container">
-          <div class ="heading">
-              <h1>QUIZ BOARD</h1>
-              <div id="answers">
-                  <form id="add">
-                    <p><b>1. Which of the following is correct about features of JavaScript?</b></p>
-                    <input type="radio" name="question1" value="wrong" /> JavaScript is a lightweight, interpreted programming language.<br/>
-                    <input type="radio" name="question1" value="wrong" /> JavaScript is designed for creating network-centric applications.<br/>
-                    <input type="radio" name="question1" value="wrong" /> JavaScript is complementary to and integrated with Java.<br/>
-                    <input type="radio" name="question1" value="right" /> All of the above.<br/>
-                  <p><b>2. Which built-in method returns the calling string value converted to lower case?</b></p>
-                    <input type="radio" name="question2" value="right" /> toLowerCase()<br/>
-                    <input type="radio" name="question2" value="wrong" /> toLower()<br/>
-                    <input type="radio" name="question2" value="wrong" /> changeCase(case)<br/>
-                    <input type="radio" name="question2" value="wrong" /> None of the above.<br/>
-                  <p><b>3.  Which built-in method removes the last element from an array and returns that element?</b></p>
-                    <input type="radio" name="question3" value="wrong" /> last()<br/>
-                    <input type="radio" name="question3" value="wrong" /> get()<br/>
-                    <input type="radio" name="question3" value="right" /> pop()<br/>
-                    <input type="radio" name="question3" value="wrong" /> None of the above.<br/>
-                  <p><b>4. Which of the following function of String object creates a string to be displayed as bold as if it were in a tag?</b></p>
-                    <input type="radio" name="question4" value="wrong" /> anchor()<br/>
-                    <input type="radio" name="question4" value="wrong" /> big()<br/>
-                    <input type="radio" name="question4" value="wrong" /> blink()<br/>
-                    <input type="radio" name="question4" value="right" /> bold()<br/>
-                  <p><b>5. Which of the following function of Array object returns a string representing the array and its elements tag?</b></p>
-                    <input type="radio" name="question5" value="wrong" /> toSource()<br/>
-                    <input type="radio" name="question5" value="wrong" /> sort()<br/>
-                    <input type="radio" name="question5" value="wrong" /> splice()<br/>
-                    <input type="radio" name="question5" value="right" /> toString()<br/>
-                  <p><b>6. What is JavaScript?</b></p>
-                    <input type="radio" name="question6" value="right"/> a programming language<br/>
-                    <input type="radio" name="question6" value="wrong" /> an Asian name<br/>
-                    <input type="radio" name="question6" value="wrong"/> a type of tea<br/>
-                    <input type="radio" name="question6" value="wrong"/> none of the above<br/>
-                  <p><b>7. When was JavaScript created?</b></p>
-                    <input type="radio" name="question7" value="wrong"/>2018<br/>
-                    <input type="radio" name="question7" value="right"/>1995<br/>
-                    <input type="radio" name="question7" value="wrong"/>1837<br/>
-                    <input type="radio" name="question7" value="wrong"/>2000<br/>
-                  <p><b>8. Which of these is not a JavaScript framework?</b></p>
-                    <input type="radio" name="question8" value="wrong"/>Angular JS<br/>
-                    <input type="radio" name="question8" value="wrong"/>React<br/>
-                    <input type="radio" name="question8" value="right"/>Bootstrap<br/>
-                    <input type="radio" name="question8" value="wrong"/>Vue<br/>
-                  <p><b>9. What does DOM mean?</b></p>
-                    <input type="radio" name="question9" value="wrong"/>Document Only Mode<br/>
-                    <input type="radio" name="question9" value="wrong"/>Don't Open Mode<br/>
-                    <input type="radio" name="question9" value="right"/>Document Object Model<br/>
-                    <input type="radio" name="question9" value="wrong"/>Document Object Mode<br/>
-                  <p><b>10. Which of these is a JavaScript Library?</b></p>
-                    <input type="radio" name="question10" value="wrong"/>HTML<br/>
-                    <input type="radio" name="question10" value="right"/>jQuery<br/>
-                    <input type="radio" name="question10" value="wrong"/>CSS<br/>
-                    <input type="radio" name="question10" value="wrong"/>Sass<br/> 
-                  <button type="button" id="button1">Submit!</button>
-                  <input type="reset" id="button2">
-                    </form>
-                    <div id="results">
-                      <div class="footer">
-                        <p>All Rights Reserved.</p>
-                        <br>
-                        <p>Natasha Serem 2021</p>
-                      </div>
-                    </div>
+          <h1 class="text-center">JavaScript Quiz</h1>
+          <form>
+            <div id="intro">
+              <h4 class="mb-4">Test your JavaScript knowledge</h4>
+              <p></p>
+              <div class="form-group">
+                <label for="name">First Name*</label>
+                <input class="form-control" type="text" id="firstName">
               </div>
-          </div>
-      </div>
+              <div class="form-group">
+                <label for="name">Second Name*</label>
+                <input class="form-control" type="text" id="secondName">
+              </div>
+              <button id="start-btn" class="btn">START</button>
+              <p id="no-name" class="text-center mt-4">Please <span>ENTER</span> your name</p>
+            </div>
+            <div id="form1">
+              <div class="question1">
+                <p>1. What is JavaScript?</p>
+                <div class="inputs">
+                  <div class="form-group">
+                    <label for="language">
+                      <input value="10" type="radio" name="js" id="language">
+                      <span class="circle"></span>
+                      Programming Language</label>
+                  </div>
+                  <div class="form-group">
+                    <label  for="asian">
+                      <input value="0" type="radio" name="js" id="asian">
+                      <span class="circle"></span>
+                      Asian Language</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="java">
+                      <input value="0" type="radio" name="js" id="java">
+                      <span class="circle"></span>
+                      Java Upgrade</label>
+                  </div>
+                  <div class="form-group">
+                    <label  for="none">
+                      <input value="0" type="radio" name="js" id="none">
+                      <span class="circle"></span>
+                      None of the above</label>
+                  </div>
+                </div>
+              </div>
+              <div class="question2">
+                <p>2. When was JavaScript created?</p>
+                <div class="inputs">
+                  <div class="form-group">
+                    <label  for="2018">
+                      <input value="0"type="radio" name="year" id="2018">
+                      <span class="circle"></span>
+                      2018
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="1995">
+                      <input value="10" type="radio" name="year" id="1995">
+                      <span class="circle"></span>
+                      1995</label>
+                  </div>
+                  <div class="form-group">
+                    <label  for="1837">
+                      <input  value="0" type="radio" name="year" id="1837">
+                      <span class="circle"></span>
+                      1837</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="2000">
+                      <input value="0" type="radio" name="year" id="2000">
+                      <span class="circle"></span>
+                      2000</label>
+                  </div>
+                </div>
+              </div>
+              <div class="question3">
+                <p>3. Which of these is NOT a JavaScript framework?</p>
+                <div class="inputs">
+                  <div class="form-group">
+                    <label for="angular">
+                      <input value="0" type="radio" name="framework" id="angular">
+                      <span class="circle"></span>
+                      Angular JS</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="react">
+                      <input value="0" type="radio" name="framework" id="react">
+                      <span class="circle"></span>
+                      React</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="bootstrap">
+                      <input value="10" type="radio" name="framework" id="bootstrap">
+                      <span class="circle"></span>
+                      Bootstrap</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Vue">
+                      <input value="0" type="radio" name="framework" id="Vue">
+                      <span class="circle"></span>
+                      Vue</label>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow" id="arrow-right">
+                <i class="fas fa-arrow-right text-right"></i>
+              </div>
+            </div>
+            <div id="form2">
+              <div class="question4">
+                <p>4. Which of these is NOT a JavaScript function?</p>
+                <div class="inputs">
+                  <div class="form-group">
+                    <label for="alert">
+                      <input value="0" type="radio" name="function" id="alert">
+                      <span class="circle"></span>
+                      alert()
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirm">
+                      <input value="0" type="radio" name="function" id="confirm">
+                      <span class="circle"></span>
+                      confirm()</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="prompt">
+                      <input value="0" type="radio" name="function" id="prompt">
+                      <span class="circle"></span>
+                      prompt()</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="boolean">
+                      <input value="10" type="radio" name="function" id="boolean">
+                      <span class="circle"></span>
+                      boolean</label>
+                  </div>
+                </div>
+              </div>
+              <div class="question5">
+                <p>5. What is the DOM in full?</p>
+                <div class="inputs">
+                  <div class="form-group">
+                    <label for="wrong-1">
+                      <input value="0" type="radio" name="dom" id="wrong-1">
+                      <span class="circle"></span>
+                      Document Only Meat</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="wrong-2">
+                      <input  value="0" type="radio" name="dom" id="wrong-2">
+                      <span class="circle"></span>
+                      Don't Open Meat</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="right">
+                      <input  value="10" type="radio" name="dom" id="right">
+                      <span class="circle"></span>
+                      Document Object Model</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="wrong-3">
+                      <input value="0" type="radio" name="dom" id="wrong-3">
+                      <span class="circle"></span>
+                      None of the above</label>
+                  </div>
+                </div>
+              </div>
+              <div class="question6">
+                <p>6. Which of these is a JavaScript library?</p>
+                <div class="inputs">
+                  <div class="form-group">
+                    <label for="body">
+                      <input value="0" type="radio" name="link" id="body">
+                      <span class="circle"></span>
+                      HTML</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="head">
+                      <input value="10" type="radio" name="link" id="head">
+                      <span class="circle"></span>
+                      jQuery</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="html">
+                      <input value="0" type="radio" name="link" id="html">
+                      <span class="circle"></span>
+                      CSS</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="section">
+                      <input value="0" type="radio" name="link" id="section">
+                      <span class="circle"></span>
+                      Sass</label>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow" id="arrow-left">
+                <i class="fas fa-arrow-left text-left"></i>
+              </div>
+              <button id="submit" class="btn">Submit</button>
+            </div>
+            <div id="score">
+              <p class="text-center name-display"></p>
+              <p class="text-center">Your score is:</p>
+              <p class="text-center scoreDisplay"></p>
+              <button id="retake" class="btn">Retake Quiz</button>
+      
+            </div>
+          </form>
+        </div>
+        <script src="./js/jquery-3.6.0.js"></script>
+        <script src="./js/script.js"></script>
   </body>
 <html>
