@@ -9,7 +9,8 @@ h1{
     margin-right: 50px;
     margin-top: -20px;
     height: 200px;
-    font-size: 0.5cm
+    font-size: 0.5cm;
+    background-image: linear-gradient(rgb(138, 133, 133));
   }
   #button1 {
     border-radius: 12px;
@@ -33,4 +34,22 @@ h1{
       margin-top: 50px;
       font-style: oblique;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .test1 {
+    margin-top: 80px;
+    margin-left: 145px;
+  }
+  .information {
+    float: right;
+    margin-right: 570px;
+    margin-top: 100px;
+  }
+  #answers {
+    margin-left: 90px;
+    line-height: 37px;
+  }
+  #result {
+    font-size: 0.5cm;
+    margin-top: 20px;
+    font-family: monospace;
   }
